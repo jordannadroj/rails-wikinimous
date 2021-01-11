@@ -1,0 +1,45 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.articles {
+  margin: auto;
+  width: 50%;
+}
+
+.new_article {
+  color: grey;
+  text-decoration: none;
+}
+
+.article {
+  margin: 20px auto auto auto;
+  width: 50%;
+}
+
+
+.edit_links {
+
+}
+
+.article_form {
+  width: 50%;
+  margin: auto;
+}
+
+.new_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#article_content {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+

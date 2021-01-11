@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/articles">Wikimonious</a>
+  <a class="new_article" href="/articles/new">New Article</a>
+</nav>
+
+<div class="article">
+  <h1><%= @article.title %> <span class="edit_links"> <%= link_to "📝", edit_article_path %> <%= link_to "🗑", article_path, method: :delete, data: {confirm: "Are you sure you want to delete?"} %> </span> </h1>
+
+  <hr>
+  <br>
+  <p><%= @article.content %></p>
+
+  <%=link_to "Back", articles_path %>
+
+</div>
