@@ -3,13 +3,8 @@
 
   <div class="form">
   <!-- @article is the unitialzed article instance made in the controller -->
-    <%= form_for(@article) do |f| %>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-      <%= f.label :content %>
-      <%= f.text_field :content %>
-      <%= f.submit %>
-    <% end %>
+    <%= render 'form', article: @article %>
+
   </div>
 
     <%= link_to "Back", articles_path %>
